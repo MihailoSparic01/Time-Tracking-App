@@ -1,0 +1,48 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+.section {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: #0e1323;
+}
+
+.container {
+  max-width: 111.6rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 3.2rem;
+}
+
+.grid-item {
+  background-color: #1c204b;
+  border-radius: 1.5rem;
+}
+
+.grid-item-1 {
+  grid-column: 1 / 1;
+  grid-row: 1 / -1;
+}
+
+.account-img {
+  max-width: 100%;
+  width: 7.8rem;
+  height: 7.8rem;
+}

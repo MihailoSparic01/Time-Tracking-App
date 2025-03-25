@@ -22,7 +22,6 @@ html {
 
 .container {
   max-width: 111.6rem;
-  width: 100%;
   margin: 0 auto;
 }
 
@@ -30,116 +29,55 @@ html {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  width: 100%;
   gap: 3.2rem;
 }
 
-.grid-item {
+.account {
+  grid-row: 1 / 3;
+}
+
+.header {
+  background-color: #ff8b64;
+  border-radius: 1.5rem 1.5rem 0 0;
+  z-index: 1;
+  position: relative;
+  height: 4rem;
+}
+
+.header img {
+  width: 7.8rem;
+  height: auto;
+}
+
+.content {
   background-color: #1c204b;
   border-radius: 1.5rem;
+  margin-top: -1rem;
+  z-index: 2;
+  position: relative;
   padding: 3.2rem;
 }
 
-.grid-item-1 {
-  grid-column: 1 / 1;
-  grid-row: 1 / -1;
-}
-
-.account-img {
-  max-width: 100%;
-  width: 7.8rem;
-  height: 7.8rem;
-  margin-bottom: 4rem;
-}
-
-.account-info span {
-  display: block;
-  font-size: 1.5rem;
-  color: #bbc0ff;
-}
-
-.account-info {
-  font-size: 4rem;
-  line-height: 4.7rem;
-  font-weight: 100;
-  color: #ffffff;
-}
-
-.grid-item-2,
-.grid-item-3,
-.grid-item-4,
-.grid-item-5,
-.grid-item-6 {
-  position: relative;
-}
-
-.grid-item-2 {
-  grid-column: 2 / 3;
-  grid-row: 1 / 2;
-}
-
-.grid-item-3 {
-  grid-column: 3 / 4;
-  grid-row: 1 / 2;
-}
-
-.grid-item-4 {
-  grid-column: 4 / 5;
-  grid-row: 1 / 2;
-}
-
-.grid-item-5 {
-  grid-column: 2 / 3;
-  grid-row: 2 / 3;
-}
-
-.grid-item-6 {
-  grid-column: 3 / 4;
-  grid-row: 2 / 3;
-}
-
-.grid-item-7 {
-  grid-column: 4 / 5;
-  grid-row: 2 / 3;
-}
-
-.grid-item-2::before {
-  content: "";
-  width: 100%;
-  height: 5rem;
-  background-color: #ff8b64;
-  position: absolute;
-  top: -3rem;
-  left: 0;
-  border-radius: 1.5rem;
-  background-image: url("/images/icon-work.svg");
-  background-repeat: no-repeat;
-  background-position-x: calc(100% - 1rem);
-  background-position-y: center;
-  backface-visibility: hidden;
-}
-
-.first-line {
+.first-row {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   margin-bottom: 2.4rem;
 }
 
-.first-line p {
+.work {
   font-size: 1.8rem;
+  font-weight: 500;
   line-height: 2.1rem;
 }
 
 .hours {
-  font-weight: 100;
   font-size: 5.6rem;
+  font-weight: 100;
   line-height: 6.6rem;
   margin-bottom: 0.8rem;
 }
 
 .when {
-  font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 18%;
-  color: #bbc0ff;
 }

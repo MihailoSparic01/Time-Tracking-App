@@ -189,10 +189,6 @@ html {
     width: 100%;
   }
 
-  .section {
-    display: block;
-  }
-
   .account {
     grid-column: 1 / -1;
     grid-row: 1 / 4;
